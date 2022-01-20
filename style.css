@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+.gran-contenedor{
+    width: 100%;
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 400px;
+}
+
+[class*="contenedor-paralax"]{
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+}
+/* .contenedor-paralax__1{
+    background-color: violet;
+} */
+.contenedor-paralax__2{
+    background-color: rgb(95, 183, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-paralax__2 h1{
+    font-size: 7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.capa{
+    position: absolute; 
+    top: 0;
+    left: 0;   
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.capa__fondo{
+    background-image: url(/img/fondo\ 4.png);
+    transform: translateZ(-600px) scale(4);
+    z-index: o;
+}
+.capa__2{
+    background-image: url(/img/fondo\ 3.png);
+    transform: translateZ(-400px) scale(2.1);
+    z-index: 1;
+}
+
+.capa__3{
+    background-image: url(/img/fondo\ 1.png);
+    transform: translateZ(-200px) scale(1.5);
+    z-index: 1;
+}
+.capa__4{
+    background-image: url(/img/fondo\ 5.png);
+    transform: translateZ(-100px) scale(1.3);
+    z-index: 1;
+    display: flex;
+}
